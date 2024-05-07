@@ -15,7 +15,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: artifact02
+          name: artifact03
           # Upload entire repository
           path: '.'
       - run: echo "This job status is ${{job.status}}."
