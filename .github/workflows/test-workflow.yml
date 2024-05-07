@@ -12,4 +12,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{github.workspace}}
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
       - run: echo "This job status is ${{job.status}}."
